@@ -1,6 +1,6 @@
 # DICOM Viewer Extension
 
-A custom editor extension for viewing DICOM medical images in MedCompanion IDE.
+Viewer for DICOM medical images in MedCompanion IDE.
 
 ## Features
 
@@ -94,7 +94,7 @@ extensions/dicom-viewer/
 ├── tsconfig.json          # TypeScript configuration
 ├── src/
 │   ├── extension.ts      # Extension entry point
-│   └── dicomViewer.ts    # Custom editor provider
+│   └── dicomViewer.ts    # Viewer provider
 └── media/
     ├── viewer.js         # Webview JavaScript
     └── viewer.css        # Webview styles

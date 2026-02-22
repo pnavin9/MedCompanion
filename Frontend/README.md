@@ -7,7 +7,7 @@ MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizat
 - **Chat panel** — MedGemma-backed streaming chat; text, images, and optional context (e.g. PDF text via "Add PDF Clipboard to Chat").
 - **Speech (MedASR)** — Transcription via the backend speech endpoint.
 - **PDF viewer** — PDF.js viewer with text selection and "Add PDF Clipboard to Chat" (Ctrl+Shift+V / Cmd+Shift+V). Pasted text is sent to the backend only when you submit a chat message.
-- **DICOM viewer** — Custom editor for `.dcm` with slice navigation; uses backend to process series.
+- **DICOM viewer** — Viewer for `.dcm` with slice navigation; uses backend to process series.
 
 
 ## MedCompanion-Specific Code
@@ -18,7 +18,7 @@ MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizat
 | Speech (MedASR) | `src/vs/workbench/contrib/speech/browser/medgemma/medASRSpeechProvider.ts` — extension `medcompanion.medasr`; calls `POST /api/v1/speech/transcribe` |
 | Product branding | `product.json` — `nameShort`, `applicationName`, `dataFolderName`, etc. set to MedCompanion |
 | PDF viewer extension | `extensions/pdf-viewer` — PDF.js; “Add PDF Clipboard to Chat” (e.g. Ctrl+Shift+V / Cmd+Shift+V) |
-| DICOM viewer extension | `extensions/dicom-viewer` — custom editor for `.dcm`; backend processes series |
+| DICOM viewer extension | `extensions/dicom-viewer` — viewer for `.dcm`; backend processes series |
 
 ## Architecture
 

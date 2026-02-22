@@ -28,8 +28,7 @@ The MCP server is already part of the MedCompanion project. No additional instal
 ### Starting the Server
 
 ```bash
-cd /Users/navin1/MedCompanion
-source medgemma-env/bin/activate
+# From Backend (or repo root with Backend on path), with venv activated:
 python -m mcp_server.arithmetic_server
 ```
 
@@ -261,17 +260,6 @@ The server logs to stderr (stdout is reserved for JSON-RPC). To see logs:
 ```bash
 python -m mcp_server.arithmetic_server 2> server.log
 ```
-
-## Next Steps (Frontend Integration)
-
-To complete the integration:
-
-1. **Connect to MCP server** - Frontend spawns MCP server process
-2. **Get tool schemas** - Call `tools/list` on startup
-3. **Inject into requests** - Add tools to chat API calls
-4. **Parse responses** - Detect tool calls in MedGemma output
-5. **Execute tools** - Call `tools/call` when needed
-6. **Feed results back** - Continue conversation with results
 
 ## Notes
 
