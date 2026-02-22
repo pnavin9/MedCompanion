@@ -62,7 +62,7 @@ flowchart LR
 
 - **Transcription (United-MedASR)** — Sub–1% WER (e.g. LibriSpeech 0.985%, Europarl-ASR 0.26%). arXiv:2412.00055.
 - **Clinical QA (MedGemma 4B)** — MedQA 64.4, MedMCQA 55.7, PubMedQA 73.4. arXiv:2507.05201.
-- **Offline latency (M4 Max)** — TTFT ~30 ms, ~20 tok/s; dictation→summary ~15 s; PDF Q&A ~3 s; DICOM ~5 s.
+- **Offline latency (M4 Max)** — ASR throughput: ~0.45 s compute per 60 s audio; generation speed: ~12 tokens/s; PDF question → grounded answer: ~4 s; DICOM question → multimodal answer: ~7 s.
 - **Deterministic math** — Dose and risk calculations via MCP tools (exact), not LLM-only.
 
 ---

@@ -163,11 +163,10 @@ curl -X POST http://localhost:8000/api/v1/chat \
 
 Typical offline timings (M4 Max; varies with context and quantization):
 
-- TTFT: ~30 ms  
-- Generation: ~20 tokens/s  
-- Dictation → transcript → summary draft: ~15 s  
-- PDF question → grounded answer: ~3 s  
-- DICOM question → multimodal answer: ~5 s  
+- ASR throughput: ~0.45 s compute per 60 s audio  
+- Generation speed: ~12 tokens/s  
+- PDF question → grounded answer: ~4 s  
+- DICOM question → multimodal answer: ~7 s  
 
 ## Development
 
