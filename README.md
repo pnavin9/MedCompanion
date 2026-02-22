@@ -45,7 +45,7 @@ flowchart LR
     Backend --> MedASR[MedASR]
     Backend --> MedGemma[MedGemma]
     Backend --> MCP[MCP Server]
-    Backend --> DocServices["PDF / DICOM"]
+    Backend --> DicomSvc[DICOM]
 ```
 
 ---

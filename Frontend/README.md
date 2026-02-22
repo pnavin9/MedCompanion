@@ -1,17 +1,16 @@
 # MedCompanion Frontend (IDE)
 
-MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizations. It provides a single workspace for chat, PDF viewing, DICOM viewing, Add Context, and role presets, and communicates with the MedCompanion backend for transcription, document processing, and multimodal reasoning.
+MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizations. It provides a single workspace for chat, PDF viewing, DICOM viewing, Add Context, and role presets. The chat panel, speech (MedASR), and DICOM viewer call the MedCompanion backend; the PDF viewer is client-side only and does not call the backend.
 
 ## Overview
 
 The frontend consists of the VS Code workbench plus MedCompanion-specific contributions:
 
-- **Chat panel** — MedGemma-backed chat with streaming; supports text and images and optional context from PDF/DICOM.
+- **Chat panel** — MedGemma-backed chat with streaming; supports text and images and optional context (e.g. text added from PDF via "Add PDF Clipboard to Chat"). Uses backend at `http://localhost:8000`.
 - **Speech (MedASR)** — Built-in transcription via the backend speech endpoint.
-- **PDF viewer** — Built-in viewer (PDF.js) with text selection and an “Add PDF Clipboard to Chat” command.
-- **DICOM viewer** — Custom editor for `.dcm` files with slice navigation and backend processing.
+- **PDF viewer** — Built-in viewer (PDF.js) with text selection and an "Add PDF Clipboard to Chat" command. Runs entirely in the IDE; does not call the backend. Selected PDF text is sent to the backend only when the user submits a chat message.
+- **DICOM viewer** — Custom editor for `.dcm` files with slice navigation; calls backend `POST /api/v1/dicom/process-series` to process series.
 
-All of these use the backend at `http://localhost:8000` by default.
 
 ## MedCompanion-Specific Code
 
@@ -30,19 +29,18 @@ flowchart TB
     subgraph vsCodeCore [VS Code Core]
         ChatPanel[Chat Panel]
         Speech[Speech / MedASR]
-        PdfViewer[PDF Viewer]
+        PdfViewer["PDF Viewer (client-side only)"]
         DicomViewer[DICOM Viewer]
     end
     Backend[Backend API]
     ChatPanel --> Backend
     Speech --> Backend
-    PdfViewer --> Backend
     DicomViewer --> Backend
 ```
 
 ## Build and Run
 
-**Prerequisites:** Node.js and yarn. The MedCompanion backend must be running at `http://localhost:8000` for chat, speech, and DICOM.
+**Prerequisites:** Node.js and yarn. The MedCompanion backend must be running at `http://localhost:8000` for chat, speech, and DICOM (the PDF viewer works without the backend).
 
 1. Install dependencies:
    ```bash
