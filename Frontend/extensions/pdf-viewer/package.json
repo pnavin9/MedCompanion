@@ -1,0 +1,35 @@
+{
+  "name": "pdf-viewer",
+  "displayName": "PDF Viewer",
+  "description": "View PDF files with PDF.js",
+  "version": "1.0.0",
+  "publisher": "medcompanion",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "main": "./out/extension.js",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "pdfViewer.viewer",
+        "displayName": "PDF Viewer",
+        "priority": "default",
+        "selector": [
+          {
+            "filenamePattern": "*.{pdf,PDF}"
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.0.379"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}

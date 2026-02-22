@@ -1,0 +1,81 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--vscode-font-family);
+	color: var(--vscode-foreground);
+	background: var(--vscode-editor-background);
+}
+
+.loading,
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 16px;
+}
+
+.error {
+	color: var(--vscode-errorForeground);
+}
+
+#viewer {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.main-view {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+	overflow: hidden;
+}
+
+#image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.controls {
+	padding: 10px;
+	background: var(--vscode-sideBar-background);
+	border-top: 1px solid var(--vscode-panel-border);
+}
+
+#slider {
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.info {
+	text-align: center;
+	font-size: 14px;
+}
+
+.metadata-panel {
+	padding: 15px;
+	background: var(--vscode-sideBar-background);
+	border-top: 1px solid var(--vscode-panel-border);
+	max-height: 30vh;
+	overflow-y: auto;
+}
+
+.metadata-panel h3 {
+	margin: 10px 0 5px 0;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.metadata-panel p {
+	margin: 4px 0;
+	font-size: 12px;
+}

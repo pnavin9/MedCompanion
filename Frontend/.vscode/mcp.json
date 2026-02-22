@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "arithmetic": {
+      "command": "python",
+      "args": ["-m", "mcp_server.arithmetic_server"],
+      "env": {
+        "PYTHONPATH": "/Users/navin1/MedCompanion"
+      }
+    }
+  }
+}

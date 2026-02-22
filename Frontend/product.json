@@ -1,0 +1,97 @@
+{
+	"nameShort": "MedCompanion",
+	"nameLong": "MedCompanion Medical IDE",
+	"applicationName": "medcompanion",
+	"dataFolderName": ".medcompanion",
+	"win32MutexName": "medcompanion",
+	"licenseName": "MIT",
+	"licenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+	"serverLicenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+	"serverGreeting": [],
+	"serverLicense": [],
+	"serverLicensePrompt": "",
+	"serverApplicationName": "medcompanion-server",
+	"serverDataFolderName": ".medcompanion-server",
+	"tunnelApplicationName": "medcompanion-tunnel",
+	"win32DirName": "MedCompanion",
+	"win32NameVersion": "MedCompanion",
+	"win32RegValueName": "MedCompanion",
+	"win32x64AppId": "{{A1B2C3D4-E5F6-4A5B-9C8D-1234567890AB}",
+	"win32arm64AppId": "{{B2C3D4E5-F6A7-4B5C-8D9E-234567890ABC}",
+	"win32x64UserAppId": "{{C3D4E5F6-A7B8-4C5D-9E0F-34567890ABCD}",
+	"win32arm64UserAppId": "{{D4E5F6A7-B8C9-4D5E-0F1A-4567890ABCDE}",
+	"win32AppUserModelId": "MedCompanion.App",
+	"win32ShellNameShort": "M&edCompanion",
+	"win32TunnelServiceMutex": "medcompanion-tunnelservice",
+	"win32TunnelMutex": "medcompanion-tunnel",
+	"darwinBundleIdentifier": "com.medcompanion.app",
+	"darwinProfileUUID": "E5F6A7B8-C9D0-4E5F-1A2B-567890ABCDEF",
+	"darwinProfilePayloadUUID": "F6A7B8C9-D0E1-4F5A-2B3C-67890ABCDEF0",
+	"linuxIconName": "medcompanion",
+	"licenseFileName": "LICENSE.txt",
+	"reportIssueUrl": "https://github.com/pnavin9/medcompanion/issues/new",
+	"nodejsRepository": "https://nodejs.org",
+	"urlProtocol": "medcompanion",
+	"defaultChatAgent": {
+		"extensionId": "medcompanion.chat",
+		"chatExtensionId": "medcompanion.chat",
+		"documentationUrl": "https://github.com/pnavin9/medcompanion/docs/chat",
+		"provider": {
+			"default": {
+				"id": "medcompanion",
+				"name": "MedCompanion"
+			}
+		}
+	},
+	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+	"builtInExtensions": [
+		{
+			"name": "ms-vscode.js-debug-companion",
+			"version": "1.1.3",
+			"sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+			"repo": "https://github.com/microsoft/vscode-js-debug-companion",
+			"metadata": {
+				"id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.js-debug",
+			"version": "1.97.1",
+			"sha256": "977dd854805547702e312e176f68a1b142fa123f228258f47f0964560ad32496",
+			"repo": "https://github.com/microsoft/vscode-js-debug",
+			"metadata": {
+				"id": "25629058-ddac-4e17-abba-74678e126c5d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.vscode-js-profile-table",
+			"version": "1.0.10",
+			"sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+			"repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+			"metadata": {
+				"id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		}
+	]
+}

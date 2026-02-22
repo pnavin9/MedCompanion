@@ -1,0 +1,39 @@
+{
+  "name": "dicom-viewer",
+  "displayName": "DICOM Medical Image Viewer",
+  "description": "View DICOM medical images with slice navigation",
+  "version": "1.0.0",
+  "publisher": "medcompanion",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "main": "./out/extension.js",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "dicomViewer.viewer",
+        "displayName": "DICOM Viewer",
+        "priority": "default",
+        "selector": [
+          {
+            "filenamePattern": "*.{dcm,DCM,dicom,DICOM}"
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "DICOM Viewer",
+      "properties": {
+        "dicomViewer.serverUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "MedCompanion server URL"
+        }
+      }
+    }
+  }
+}
