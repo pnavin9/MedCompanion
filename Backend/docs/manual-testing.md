@@ -4,8 +4,7 @@ This guide provides curl commands to manually test the API, including health, se
 
 ## Prerequisites
 
-1. Start the server from the `Backend` directory (activate the virtual environment, then run `python -m server.main` or `./start_server.sh` if present).
-2. Wait for the model to load (first request may take 30–60 seconds).
+Start the server from `Backend` (activate venv, then `python -m server.main` or `./start_server.sh`). Allow 30–60 s for model load on first request.
 
 ## Health Check
 
@@ -75,9 +74,4 @@ curl -X DELETE http://localhost:8000/api/v1/sessions/$SESSION_ID | jq
 
 ## Automated Tests
 
-From the `Backend` directory with the virtual environment activated:
-
-```bash
-pytest
-python test_api.py   # if present
-```
+From `Backend` with venv active: `pytest`; optionally `python test_api.py` if present.

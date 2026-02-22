@@ -52,18 +52,18 @@ flowchart LR
 
 ## Quick Start
 
-1. **Prerequisites** — Python 3.10+, Node/yarn (for Frontend), ffmpeg (for speech). See [Backend/README.md](Backend/README.md) for Python env and model setup.
-2. **Start the backend** — From the repo root: activate the backend venv, then run the server (e.g. `python -m server.main` from `Backend/`). See [Backend/README.md](Backend/README.md).
-3. **Build and run the frontend** — From `Frontend/`: `yarn install`, then build and run (e.g. `./scripts/code.sh`). See [Frontend/README.md](Frontend/README.md). The IDE expects the backend at `http://localhost:8000`.
+1. **Prerequisites** — Python 3.10+, Node/yarn (Frontend), ffmpeg (speech).
+2. **Backend** — From `Backend/`: create/activate venv, `pip install -r requirements.txt`, then `python -m server.main`. API at `http://localhost:8000`.
+3. **Frontend** — From `Frontend/`: `yarn install`, then `./scripts/code.sh` (or `yarn compile` and run). IDE expects backend at `http://localhost:8000`.
 
 ---
 
-## Performance and References
+## Performance
 
-- **Transcription (United-MedASR)** — Sub–1% WER on multiple benchmarks (e.g. LibriSpeech test-clean 0.985%, Europarl-ASR 0.26%). See arXiv:2412.00055.
-- **Clinical QA (MedGemma 4B)** — MedQA 64.4, MedMCQA 55.7, PubMedQA 73.4 (arXiv:2507.05201).
-- **Offline latency (Apple M4 Max)** — TTFT ~30 ms, ~20 tokens/s; dictation → summary draft ~15 s; PDF Q&A ~3 s; DICOM Q&A ~5 s (varies with context and quantization).
-- **Deterministic calculations** — Dose math and similar operations are routed through MCP tools for exact results instead of LLM-only arithmetic.
+- **Transcription (United-MedASR)** — Sub–1% WER (e.g. LibriSpeech 0.985%, Europarl-ASR 0.26%). arXiv:2412.00055.
+- **Clinical QA (MedGemma 4B)** — MedQA 64.4, MedMCQA 55.7, PubMedQA 73.4. arXiv:2507.05201.
+- **Offline latency (M4 Max)** — TTFT ~30 ms, ~20 tok/s; dictation→summary ~15 s; PDF Q&A ~3 s; DICOM ~5 s.
+- **Deterministic math** — Dose and risk calculations via MCP tools (exact), not LLM-only.
 
 ---
 

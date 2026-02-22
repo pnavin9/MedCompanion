@@ -1,15 +1,13 @@
 # MedCompanion Frontend (IDE)
 
-MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizations. It provides a single workspace for chat, PDF viewing, DICOM viewing, Add Context, and role presets. The chat panel, speech (MedASR), and DICOM viewer call the MedCompanion backend; the PDF viewer is client-side only and does not call the backend.
+MedCompanion IDE is a VS Code (Code–OSS) fork with medical-workflow customizations: chat, PDF and DICOM viewers, Add Context, and role presets. The backend at `http://localhost:8000` is used by chat, speech (MedASR), and the DICOM viewer; the PDF viewer runs entirely in the IDE.
 
 ## Overview
 
-The frontend consists of the VS Code workbench plus MedCompanion-specific contributions:
-
-- **Chat panel** — MedGemma-backed chat with streaming; supports text and images and optional context (e.g. text added from PDF via "Add PDF Clipboard to Chat"). Uses backend at `http://localhost:8000`.
-- **Speech (MedASR)** — Built-in transcription via the backend speech endpoint.
-- **PDF viewer** — Built-in viewer (PDF.js) with text selection and an "Add PDF Clipboard to Chat" command. Runs entirely in the IDE; does not call the backend. Selected PDF text is sent to the backend only when the user submits a chat message.
-- **DICOM viewer** — Custom editor for `.dcm` files with slice navigation; calls backend `POST /api/v1/dicom/process-series` to process series.
+- **Chat panel** — MedGemma-backed streaming chat; text, images, and optional context (e.g. PDF text via "Add PDF Clipboard to Chat").
+- **Speech (MedASR)** — Transcription via the backend speech endpoint.
+- **PDF viewer** — PDF.js viewer with text selection and "Add PDF Clipboard to Chat" (Ctrl+Shift+V / Cmd+Shift+V). Pasted text is sent to the backend only when you submit a chat message.
+- **DICOM viewer** — Custom editor for `.dcm` with slice navigation; uses backend to process series.
 
 
 ## MedCompanion-Specific Code
@@ -19,8 +17,8 @@ The frontend consists of the VS Code workbench plus MedCompanion-specific contri
 | Chat + MedGemma client | `src/vs/workbench/contrib/chat/` — `medgemma/medgemmaClient.ts` calls `POST /api/v1/chat` and `POST /api/v1/chat/stream` |
 | Speech (MedASR) | `src/vs/workbench/contrib/speech/browser/medgemma/medASRSpeechProvider.ts` — extension `medcompanion.medasr`; calls `POST /api/v1/speech/transcribe` |
 | Product branding | `product.json` — `nameShort`, `applicationName`, `dataFolderName`, etc. set to MedCompanion |
-| PDF viewer extension | `extensions/pdf-viewer` — PDF.js viewer; “Add PDF Clipboard to Chat” (e.g. Ctrl+Shift+V / Cmd+Shift+V) |
-| DICOM viewer extension | `extensions/dicom-viewer` — custom editor for `.dcm`; calls `POST /api/v1/dicom/process-series` |
+| PDF viewer extension | `extensions/pdf-viewer` — PDF.js; “Add PDF Clipboard to Chat” (e.g. Ctrl+Shift+V / Cmd+Shift+V) |
+| DICOM viewer extension | `extensions/dicom-viewer` — custom editor for `.dcm`; backend processes series |
 
 ## Architecture
 
@@ -29,7 +27,7 @@ flowchart TB
     subgraph vsCodeCore [VS Code Core]
         ChatPanel[Chat Panel]
         Speech[Speech / MedASR]
-        PdfViewer["PDF Viewer (client-side only)"]
+        PdfViewer[PDF Viewer]
         DicomViewer[DICOM Viewer]
     end
     Backend[Backend API]
@@ -40,7 +38,7 @@ flowchart TB
 
 ## Build and Run
 
-**Prerequisites:** Node.js and yarn. The MedCompanion backend must be running at `http://localhost:8000` for chat, speech, and DICOM (the PDF viewer works without the backend).
+**Prerequisites:** Node.js and yarn. Backend at `http://localhost:8000` required for chat, speech, and DICOM.
 
 1. Install dependencies:
    ```bash
@@ -65,8 +63,8 @@ For full build and run from source (including native modules and the complete VS
 
 ## Configuration
 
-- **Chat / backend URL** — Configured where the MedGemma client reads the server URL (default `http://localhost:8000`).
-- **DICOM viewer** — Setting `dicomViewer.serverUrl` in settings (e.g. in `Frontend/.vscode/settings.json` or user settings) overrides the MedCompanion server URL. See `extensions/dicom-viewer/package.json` for the contribution schema.
+- **Backend URL** — Default `http://localhost:8000`; set where the MedGemma client is configured.
+- **DICOM viewer** — `dicomViewer.serverUrl` in settings overrides the server URL (see `extensions/dicom-viewer/package.json`).
 
 ## Documentation
 

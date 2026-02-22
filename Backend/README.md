@@ -1,6 +1,6 @@
 # MedCompanion Server
 
-FastAPI server for the MedCompanion backend: MedGemma multimodal chat, MedASR speech transcription, session management, document and PDF processing, DICOM processing, and MCP-based deterministic tools.
+FastAPI server for MedCompanion: MedGemma chat, MedASR, sessions, document/PDF processing, DICOM, and MCP tools.
 
 ## Features
 
@@ -72,7 +72,7 @@ Or with uvicorn:
 uvicorn server.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-The API is available at `http://localhost:8000`.
+API: `http://localhost:8000`.
 
 ## API Documentation
 
@@ -81,48 +81,21 @@ The API is available at `http://localhost:8000`.
 
 ## API Routes
 
-Routers included in the app: `chat`, `sessions`, `dicom`, `documents`, `speech`.
-
 | Area | Endpoints |
 |------|-----------|
 | Health | `GET /api/v1/health` |
 | Sessions | `POST/GET/DELETE /api/v1/sessions` |
 | Chat | `POST /api/v1/chat`, `POST /api/v1/chat/stream` |
 | Documents | `POST /api/v1/documents/preprocess-pdfs`, `POST /api/v1/documents/clear-pdf-cache` |
-| Speech | `POST /api/v1/speech/transcribe` |
+| Speech | `POST /api/v1/speech/transcribe` (multipart audio; mono 16 kHz; lazy-loaded) |
 | DICOM | `POST /api/v1/dicom/process-series` |
 | Images | `POST /api/v1/images` (multipart) |
 
-### Health
-
-```bash
-GET /api/v1/health
-```
-
-### Sessions
-
-Create: `POST /api/v1/sessions` with body `{"title": "My Session"}`.  
-List: `GET /api/v1/sessions`. Get one: `GET /api/v1/sessions/{session_id}`. Delete: `DELETE /api/v1/sessions/{session_id}`.
-
-### Chat
-
-Send message (optionally with `domain`, `mode`, `image_path`, `workspace_path`):
-
-```bash
-POST /api/v1/chat
-POST /api/v1/chat/stream
-```
-
-### Speech (MedASR)
-
-`POST /api/v1/speech/transcribe` — multipart form data with audio (mono 16 kHz recommended). MedASR loads on first use (lazy).
+Chat accepts optional `domain`, `mode`, `image_path`, `workspace_path`. Sessions: create with `{"title": "My Session"}`, then GET/DELETE by `session_id`.
 
 ## MedASR
 
-- **Service:** `server/services/medasr.py`  
-- **Endpoint:** `POST /api/v1/speech/transcribe`  
-- **Input:** Mono 16 kHz audio.  
-- **Reference:** United-MedASR reports sub–1% WER on multiple benchmarks (e.g. LibriSpeech test-clean 0.985%, Europarl-ASR 0.26%). See arXiv:2412.00055.
+Service: `server/services/medasr.py`. Speech endpoint (see table above); mono 16 kHz audio. United-MedASR: sub–1% WER on standard benchmarks. arXiv:2412.00055.
 
 ## MedGemma
 
@@ -134,18 +107,15 @@ POST /api/v1/chat/stream
 
 ## MCP (Model Context Protocol)
 
-Deterministic operations (e.g. arithmetic, dose calculations) are delegated to an MCP server so the LLM receives exact results instead of generating math. Tool schemas are injected into the model context; the backend can call the MCP server for execution.
-
-- **Server package:** `mcp_server/` (e.g. arithmetic tools).  
-- **Docs:** [mcp_server/README.md](mcp_server/README.md) and [docs/mcp-architecture-overview.md](docs/mcp-architecture-overview.md) (system architecture and data flow).
+Deterministic operations (arithmetic, dose calculations) are delegated to an MCP server; tool schemas are injected into the model context and the backend calls the server for execution. Package: `mcp_server/`. Details: [mcp_server/README.md](mcp_server/README.md), [docs/mcp-architecture-overview.md](docs/mcp-architecture-overview.md).
 
 ## Domain and mode prompts
 
-System prompts are file-based under `server/prompts/`: `_base.txt`, `_default.txt`, and per-domain/mode files (e.g. `general/consult.txt`, `radiology/diagnose.txt`) for general, radiology, pathology, and dermatology. Summarize mode can use a `workspace_path` to scan and include workspace documents (MD and cached PDF) in context.
+File-based under `server/prompts/`: `_base.txt`, `_default.txt`, and per-domain/mode (e.g. `general/consult.txt`, `radiology/diagnose.txt`) for general, radiology, pathology, dermatology. Summarize mode can pass `workspace_path` to include workspace MD and cached PDF in context.
 
 ## PDF extraction
 
-`server/services/pdf_extractor.py` extracts text from PDFs and caches it under `server/temp/pdf_cache/`. The documents router exposes preprocess and cache-clear endpoints. Workspace document scan (for summarize) uses this cache with a TTL.
+`server/services/pdf_extractor.py` extracts and caches PDF text under `server/temp/pdf_cache/`. Documents router: preprocess and clear-cache. Summarize mode’s workspace scan uses this cache (TTL applies).
 
 ## Project structure
 
@@ -185,13 +155,13 @@ curl -X POST http://localhost:8000/api/v1/chat \
 
 - **Unit tests:** From `Backend`: `pytest` (e.g. `server/tests/test_system_prompts.py`).
 
-## Sample documents for summarize mode
+## Sample documents
 
-Sample medical documents (e.g. for testing summarize mode) are in the repo under `Backend/`: `test_patient_history.md`, `test_lab_results.md`, `test_consultation_notes.md`. Use a `workspace_path` that includes these (or your own) when calling chat with summarize mode.
+`test_patient_history.md`, `test_lab_results.md`, `test_consultation_notes.md` in `Backend/` are sample inputs for summarize mode. Pass a `workspace_path` that includes them (or your own docs) in the chat request.
 
-## Performance (Apple M4 Max)
+## Performance
 
-Typical offline timings (varies with context size and quantization):
+Typical offline timings (M4 Max; varies with context and quantization):
 
 - TTFT: ~30 ms  
 - Generation: ~20 tokens/s  
