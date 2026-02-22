@@ -1,0 +1,24 @@
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+sqlalchemy>=2.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-multipart>=0.0.6
+transformers @ git+https://github.com/huggingface/transformers.git@65dc261512cbdb1ee72b88ae5b222f2605aad8e5
+torch>=2.10.0
+pillow>=10.0.0
+python-dotenv>=1.0.0
+sse-starlette>=1.6.0
+numpy>=1.24.0
+pydicom>=2.4.0
+pymupdf==1.23.8
+
+# Audio processing dependencies (for MedASR)
+librosa>=0.11.0
+soundfile>=0.13.0
+torchaudio>=2.10.0
+accelerate>=0.20.0
+huggingface_hub>=0.20.0
+
+# HTTP client (used by HuggingFace)
+requests>=2.31.0

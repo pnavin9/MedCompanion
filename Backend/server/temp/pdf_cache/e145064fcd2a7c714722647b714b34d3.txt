@@ -1,0 +1,810 @@
+--- Page 1 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+'
+MEDIBUDDY MASTER HEALTH CHECK MALE WITH COVID ANTIBODY IGG
+HAEMATOLOGY
+Complete Blood Count; CBC (EDTA whole blood)
+Erythrocytes (Whole Blood)
+Hemoglobin (Hb)*
+(NonCyanmethemoglobin Photometric Measurement)
+15.1
+gm/dL
+13.5 - 18.0
+Erythrocyte (RBC) Count*
+(Electrical Impedence)
+4.75
+mil/cu.mm
+4.7 - 6.0
+Packed Cell Volume (PCV)*
+(Calculated)
+45.5
+%
+42 - 52
+Mean Cell Volume (MCV)*
+(Electrical Impedence)
+95.8
+fL
+78 - 100
+Mean Cell Haemoglobin (MCH)*
+(Calculated)
+31.8
+pg
+27 - 31
+Mean Corpuscular Hb Concn. (MCHC)*
+(Calculated)
+33.2
+gm/dL
+32 - 36
+Red Cell Distribution Width (RDW)-CV*
+(Electrical Impedence)
+12.0
+%
+11.5 - 14.0
+RBC Morphology
+Remarks
+Normocytic normochromic
+Leucocytes (Whole, Blood)
+Total Leucocytes (WBC) Count*
+(Electrical Impedence)
+6250
+cell/cu.mm
+4000-10000
+Neutrophils*
+(VCSn Technology)
+51
+%
+40 - 80
+Lymphocytes*
+(VCSn Technology)
+37
+%
+20 - 40
+Monocytes*
+(VCSn Technology)
+10
+%
+2 - 10
+Eosinophils*
+(VCSn Technology)
+2
+%
+1 - 6
+Basophils*
+(VCSn Technology)
+0
+%
+1-2
+Absolute Count
+Page 1 of 9
+
+
+--- Page 2 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+Absolute Neutrophil Count*
+(Calculated)
+3.19
+* 10^9/L
+2.0 - 7.0
+Absolute Lymphocyte Count*
+(Calculated)
+2.31
+* 10^9/L
+1-3
+Absolute Monocyte Count*
+(Calculated)
+0.63
+* 10^9/L
+0.2-1.0
+Absolute Eosinophil Count*
+(Calculated)
+0.13
+* 10^9/L
+0.0-0.5
+Absolute Basophils Count*
+(Calculated)
+0
+* 10^9/L
+1-2
+WBC
+Within normal limits
+Platelets (Whole, Blood)
+Platelet Count*
+(Electrical Impedence)
+271
+10^3/ul
+150 - 450
+Mean Platelet Volume (MPV)*
+(Electrical Impedence)
+8.4
+fL
+7.2 - 11.7
+Platelet Morphology
+Adequate on smear
+PCT*
+(Calculated)
+0.226
+%
+0.2 - 0.5
+PDW*
+(Calculated)
+10.4
+%
+9.0 - 17.0
+Platelet large cell ratio (P-LCR)
+26.0
+%
+15 - 35
+ 
+Tests done on Automated Five Part Cell Counter. (WBC, RBC,Platelet count by impedance method, colorimetric method for Hemoglobin, WBC differential by flow cytometry using laser
+technology other parameters are calculated). All Abnormal Haemograms are reviewed confirmed microscopically.
+'
+BIOCHEMISTRY
+Kidney Function Test 2-Mini (KFT) - Corporate
+Creatinine
+(Serum, Alkalin picarate-kinetic)
+0.83
+mg/dL
+0.67 - 1.17
+Glomerular Filtration Rate (eGFR)
+(Calculated)
+126.91
+mL/min
+90 - 120 mL/min/1.73 m2
+Urea *
+(Urease)
+27.68
+mg/dL
+Adults: 17- 43
+BUN/Creatinine Ratio
+(calculated)
+15.58
+ratio
+10 - 20
+Page 2 of 9
+
+
+--- Page 3 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+Urea/Creatinine Ratio
+(calculated)
+33.35
+ratio
+40 - 100
+Uric Acid
+(Serum, Uricase, Colorimetric)
+6.28
+mg/dL
+3.5 - 7.2
+Blood Urea Nitrogen-BUN
+(Serum, Urease)
+12.93
+mg/dL
+7 - 18
+'
+HAEMATOLOGY
+HbA1c (Glycosylated Haemoglobin)
+Glyco Hb (HbA1C)
+(EDTA Whole blood,HPLC)
+4.9
+%
+Non-Diabetic: <=5.6
+Pre Diabetic:5.7-6.4
+Diabetic: >=6.5
+Estimated Average Glucose :
+93.93
+Interpretations
+1. HbA1C has been endorsed by clinical groups and American Diabetes Association guidelines 2017 for diagnosing diabetes using a cut off
+point of 6.5%
+2. Low glycated haemoglobin in a non diabetic individual are often associated with systemic inflammatory diseases, chronic anaemia
+(especially severe iron deficiency and haemolytic), chronic renal failure and liver diseases.  Clinical correlation suggested.
+3. In known diabetic patients, following values can be considered as a tool for monitoring the glycemic control.
+     Excellent control-6-7 %
+    Fair to Good control – 7-8 %
+    Unsatisfactory control – 8 to 10 %
+    Poor Control – More than 10 %
+'
+BIOCHEMISTRY
+Glucose Fasting (F)
+Glucose Fasting*
+(Plasma, Hexokinase)
+88.95
+mg/dL
+Normal: 70-100
+Impaired Fasting Glucose (IFG): 100-125
+Diabetes Mellitus: >= 126
+(On more than one occasion)
+(American Diabetes Association
+guidelines 2017)
+'
+Lipid Profile 2, Basic
+Page 3 of 9
+
+
+--- Page 4 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+Cholesterol-Total*
+(Serum, Cholesterol oxidase esterase, peroxidase)
+146.05
+mg/dL
+Desirable: <= 200
+Borderline High: 201-239
+High: > 240
+Ref: The National Cholesterol
+Education Program (NCEP) Adult
+Treatment Panel III Report.
+Triglycerides*
+(Serum ,GOD-POD)
+87.80
+mg/dL
+Normal: < 150
+Borderline High: 150-199
+High: 200-499
+Very High: >= 500
+Cholesterol-HDL Direct*
+(Serum, Direct measure-PEG)
+47.19
+mg/dL
+Normal: > 40
+Major Heart Risk: < 40
+LDL Cholesterol*
+(Serum,calculated)
+81.30
+mg/dL
+Optimal: < 100
+Near optimal/above optimal: 100-129
+Borderline high: 130-159
+High: 160-189
+Very High: >= 190
+VLDL Cholesterol*
+(Serum, calculated)
+17.56
+mg/dL
+6 - 38
+CHOL/HDL RATIO*
+(Serum, calculated)
+3.09
+3.5 - 5.0
+LDL/HDL RATIO*
+(Serum, calculated)
+1.72
+2.5 - 3.5
+Non HDL Cholesterol
+98.86
+HDL/LDL Cholesterol Ratio
+0.58
+'
+Liver Function Test 2
+Total Protein, Serum
+Total Protein*
+(Serum, Biuret, reagent blank end point)
+7.65
+g/dL
+6.6 - 8.3
+Albumin*
+(Serum, Bromcresol Green)
+4.66
+g/dL
+Adults: 3.5 - 5.2
+Globulin*
+(Serum, Calculated)
+2.99
+g/dL
+1.8 - 3.6
+A/G Ratio*
+(Serum, Calculated)
+1.56
+1.2 - 2.2
+Bilirubin Profile
+Page 4 of 9
+
+
+--- Page 5 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+Bilirubin - Total*
+(Serum, DPD)
+0.50
+mg/dL
+Adults: 0.3 - 1.2
+Bilirubin - Direct*
+(Serum, Diazotization)
+0.11
+mg/dL
+Adults and Children: < 0.2
+Bilirubin - Indirect*
+(Serum, Calculated)
+0.39
+mg/dL
+0.1 - 1.0
+SGOT*
+(Serum, UV with P5P, IFCC 37 degree)
+21.90
+U/L
+< 50
+SGPT*
+(Serum, UV with P5P, IFCC 37 degree)
+18.44
+U/L
+< 50
+SGOT / SGPT Ratio
+(Calculated)
+1.19
+-
+GGT-Gamma Glutamyl Transpeptidase*
+(Serum, Enzymatic Colorimetric Assay)
+25.17
+U/L
+<55
+Alkaline Phosphatase-ALPI
+(Serum, PNPP, AMP Buffer, IFCC 37 degree)
+72.78
+U/L
+<98
+'
+Iron Studies
+Iron*
+(Serum, TPTZ)
+54.10
+µg/dL
+70 - 180
+UIBC*
+(Serum, Nitroso-PSAP)
+250.24
+µg/dL
+155 - 355
+TIBC*
+(Serum, Ferene)
+304.34
+µg/dL
+250 - 450
+Transferrin Saturation *
+(calculated)
+17.78
+%
+20 - 50
+Interpretation:
+Disease
+Iron
+TIBC
+UIBC
+%Transferrin
+ Saturation
+Ferritin
+ 
+ 
+ 
+ 
+ 
+ 
+Iron Deficiency
+Low
+High
+High
+Low
+Low
+Hemochromatosis
+High
+Low
+Low
+High
+High
+Chronic Illness
+Low
+Low
+Low/Normal
+Low
+Normal/High
+Hemolytic Anemia
+High
+Normal/Low
+Low/Normal
+High
+High
+Sideroblastic Anemia
+Normal/High
+Normal/Low
+Low/Normal
+High
+High
+Page 5 of 9
+
+
+--- Page 6 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+Iron Poisoning
+High
+Normal
+Low
+High
+Normal
+'
+Apolipoproteins A1 *
+Apolipoproteins A1
+(Immunoturbidymetric )
+142.8
+mg/dL
+120 - 176
+'
+Apolipoproteins B *
+Apolipoproteins B
+(Immunoturbidymetric )
+79.5
+mg/dL
+63 - 114
+'
+Amylase, Serum *
+Amylase*
+(Serum, CNP-triose/CNPG3)
+61.88
+U/L
+22-80
+'
+C-Reactive Protein, Cardio; HSCRP *
+HsCRP - High Sensitivity*
+(Immunoturbidometry)
+0.62
+mg/L
+<1
+Interpretation
+This test is useful for assessing the risk of developing Myocardial Infarction in patients having acute coronary syndromes and assessing the
+risk of developing cardiovascular disease in asymptomatic individuals. A single test for high-sensitivity CRP (hs-CRP) may not reflect an
+individual patient's basal hs-CRP level. Repeat measurement may be required to firmly establish an individual's basal hs-CRP concentration.
+Because CRP is an acute-phase reactant, measurements in apparently healthy individuals may not truly reflect the basal level if inflammation
+is present.
+'
+Lipoprotein (A); LP(A) *
+Lipoprotein(a)**
+(Serum,Immunoturbidimetric)
+19.5
+mg/dL
+0-40
+Interpretation :
+• Determination of Lp(a) may be useful to guide management of individuals with a family history of Coronary heart disease (CHD)
+ • Elevated concentration of Lp(a) are a risk factor for CHD.
+• Serum concentration of Lp(a) are related to generic factors and are largely unaffected by diet, exercise and lipid lowering pharmaceuticals.
+• However ,in patients with additional modifiable CHD risk factor, more aggressive therapy to normalize these factors may be indicated if the
+Lp(a) value is also increased-
+'
+Page 6 of 9
+
+
+--- Page 7 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+IMMUNOLOGY
+Thyroid Profile, Total (T3,T4,TSH)
+T3-Total*
+((Serum,CLIA))
+173
+ng/dL
+70 - 204
+T4-Total*
+(Serum,CLIA)
+9.3
+ug/dL
+5.93-13.29
+TSH-Ultrasensitive*
+((Serum,CLIA))
+3.28
+uIU/mL
+0.4 - 4.2
+Interpretation
+It is recommended to interpret serum TSH levels with thyroid hormone levels (especially T4 levels) taking into consideration the clinical status
+of patient. Pitfalls in the interpretation of the serum TSH alone are in patients with recent treatment for thyrotoxicosis, non-thyroidal
+illness(acute severe illness or chronic illness), central hypothyroidism, confounding medications.
+For TSH :
+ 1st trimester - 0.3-4.5
+ 2nd trimester - 0.5-4.6
+ 3rd trimester - 0.8-5.2
+ 
+Condition
+TSH
+T4
+T3
+Primary Hypothyroidism
+Increased
+Low
+Normal /Low
+Subclinical Hypothyroidism
+Increased
+Normal
+Normal
+Primary Hyperthyroidism
+Decreased
+Increased
+Increased
+T3 Toxicosis
+Decreased
+Normal
+Increased
+Subclinical Hyperthyroidism 
+Decreased
+Normal
+Normal
+Central Hyperthyroidism/ Thyroid
+Hormone Resistance
+Increased /Normal
+Increased
+Increased
+Central Hypothyroidism / Non
+Thyroidal Illness
+Decreased /Normal
+Decreased
+Decreased
+'
+Vitamin B12; Cyanocobalamin
+Vitamin B12-Cyanocobalamin*
+(Serum, CLIA)
+195.3
+pg/ml
+120 - 914
+Interpretation:
+Vitamin B12, also known as cyanocobalamin, is a water soluble vitamin that is required for the maturation of erythrocytes and coenzyme form
+for more than 12 different enzyme systems. Groupsat risk for vitamin B12 deficiency include those
+(1) older than 65 years of age (2) with malabsorption(3) who are vegetarians (4) with autoimmune disorders(5) taking prescribedmedication 
+known to interfere with vitamin absorption or metabolism, including nitrous oxide, phenytoin, dihydrofolate reductase inhibitors, metformin,
+Page 7 of 9
+
+
+--- Page 8 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+and proton pump inhibitors(6) infants with suspected metabolic disorders.
+The most common cause of Vitamin B12 deficiency is pernicious anemia. Deficiency of Vitamin B12 is associated with megaloblastic anemia
+and neuropathy. Excess Vitamin B12 is excreted in urine. No adverse effects have been associated with excess vitamin B12 intake from food
+or supplements in healthy people.
+'
+Vitamin D, 25 - Hydroxy
+Vitamin D (25 - Hydroxy)*
+(Serum, CLIA)
+18.7
+ng/mL
+Deficiency: < 20
+Insufficiency: 20 - <30
+Sufficiency:   30 - 100
+Interpretation:
+Useful for :
+Diagnosis of vitamin D deficiency .
+Differential diagnosis of causes of rickets and Osteomalacia . Monitoring vitamin D replacement therapy . Diagnosis of hypervitaminosis D .
+Vitamin D levels may vary according to factors such as geography, season, or the patient’s health, diet, age, ethnic origin, use of vitamin D
+supplementation or environment.
+Some potential interfering substances like rheumatoid factor, endogenous alkaline phosphatase, fibrin, and proteins capable of binding to
+alkaline phosphatase in the patient sample may cause erroneous results in immunoassays.Carefully evaluate the results of patients
+suspected of having these types of interferences.
+'
+SARS-COV-2 (COVID-19) Qualitative IgG Antibody
+SARS-COV-2 (COVID-19) Qualitative IgG Antibody
+(Serum, CLIA)
+Reactive 67.9
+S/CO
+Non –Reactive  :  <   0.80
+Equivocal  : > 0.80 to < 1.00
+Reactive  : >  1.00
+Interpretation:
+The test is a qualitative test. The test is used for the qualitative detection of immunoglobulin (IgG) antibodies to SARS-CoV-2 to evaluate the
+immune response to the virus.
+The SARS-CoV-2 IgG assay results, in conjunction with clinical presentation and the results of other laboratory tests, is used as an aid for the
+laboratory assessment of exposure to SARS-CoV-2.
+For assessing the antibody titre post vaccination and post infection, it is recommended to do the test, IgG antibody against S1, Spike protein
+(Vaccicheck).
+'
+PSA (Prostate - Specific Antigen), Total *
+PSA
+(CLIA)
+0.368
+ng/ml
+0.0-4.0
+Page 8 of 9
+
+
+--- Page 9 ---
+Patient Name
+: MR. NAVIN PATWARI
+DOB / Age /
+Gender
+: 04/12/2002 / 22 years / Male
+Ref. Doctor
+: SELF
+Processed At
+: manipalTRUtest Ghaziabad
+Client Code
+: GZB010
+Client Address
+: GHAZIABAD
+Collection
+: 20/07/2025, 08:19 AM
+Received
+: 20/07/2025, 12:30 PM
+Reported
+: 20/07/2025, 01:55 PM
+33252010024
+Test Description
+Value(s)
+Unit(s)
+Biological Reference Interval
+ 
+Interpretation:
+Increased levels are noted in prostate cancer, benign prostatic hypertrophy, prostatitis
+**END OF REPORT**
+Page 9 of 9
